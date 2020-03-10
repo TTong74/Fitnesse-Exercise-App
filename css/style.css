@@ -1,0 +1,45 @@
+ body {
+   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+   background-color: 0;
+   color: white;
+ }
+ 
+ h1 {
+   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+   font-weight: 200;
+   font-size: 50px;
+   letter-spacing: 1px;
+ }
+ 
+ p {
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+ }
+
+ .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: darkred;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(206, 85, 4);
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  right: 0
+}
