@@ -33,13 +33,31 @@
   background-color: darkred;
 }
 
+.left-text {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Control the right side */
 .right {
   right: 0;
   background-color: rgb(206, 85, 4);
 }
 
-/* Style the image inside the centered container, if needed */
-.centered img {
-  right: 0
+.centered {
+  position: absolute;
+  top: 225px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.list {
+  position: absolute;
+  top: 450px;
+  left: 50px;
 }

@@ -14,77 +14,109 @@
 
 <body>
     <div class="split left">
-        <h1 id="app-title">Fitnesse</h1>
-        <hr>
-        <p>Input your info and log your personal records</p>
-        <button id="input-lifters-info">Input Lifters Info</button></p>
-        <p>Lifter: <span id="app-user-name">Tim Tong</span><br>
-            Height (in): <span id="app-user-height">5' 10"</span><br>
-            Weight (lbs): <span id="app-user-weight">180</span></p>
-        <hr><br>
-        <button id="log-new-record">Log New Record</button></p>
-        <table id="personal-record">
-            <caption>Personal Records</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Exercise</th>
-                    <th scope="col">Weight (lbs)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-                <tr>
-                    <th scope="row">03/01/20</th>
-                    <td>Deadlift</td>
-                    <td>315</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="left-text">
+            <h1 id="app-title">Fitnesse</h1>
+            <hr>
+            <p>Input your info and log your personal records</p>
+            <button id="input-lifters-info">Input Lifters Info</button></p>
+            <p>Lifter: <span id="app-user-name">Tim Tong</span><br>
+                Height (in): <span id="app-user-height">5' 10"</span><br>
+                Weight (lbs): <span id="app-user-weight">180</span></p>
+            <hr><br>
+            <button id="log-new-record">Log New Record</button></p>
+            <table class="left-text" id="personal-record">
+                <caption>Personal Records</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Exercise</th>
+                        <th scope="col">Weight (lbs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03/01/20</th>
+                        <td>Deadlift</td>
+                        <td>315</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="split right">
-        <p>Select a muscle group for a list of exercises</p>
         <div class="centered">
-            <img src="img/Right Arm.jpg">
-            <img src="img/Chest.jpg">
-            <img src="img/Left Arm.jpg">
-            <br>
-            <img src="img/Legs.jpg" width="371">
+            <p>Select a muscle group for a list of exercises</p>
+            <img src="img/Right Arm.jpg" alt="Arms" class="arms">
+            <img src="img/Chest.jpg" alt="Chest" class="chest">
+            <img src="img/Left Arm.jpg" alt="Arms" class="arms">
+            <img src="img/Legs.jpg" width="371" alt="Legs" class="legs">
+        </div>
+        <div>
+            <div class="list">
+                <ul id="arms-list">
+                    <h2>Biceps</h2>
+                    <li>Bicep Curls</li>
+                    <li>Hammer Curls</li>
+                    <h2>Triceps</h2>
+                    <li>Skullcrushers</li>
+                    <li>Tricep Extensions</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul id="chest-list">
+                    <h2>Chest</h2>
+                    <li>Flat Bench Press</li>
+                    <li>Incline Bench Press</li>
+                    <li>Decline Bench Press</li>
+                    <li>Dips</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul id="legs-list">
+                    <h2>Legs</h2>
+                    <li>Barbell Squats</li>
+                    <li>Goblet Squats</li>
+                    <li>Seated Leg Press</li>
+                    <li>Romanian Deadlifts</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

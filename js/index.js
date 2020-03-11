@@ -47,22 +47,10 @@ if (myApp.user) {
     addUserName.innerHTML = `${myApp.user.name}`;
 } else {
     let addUserName = document.querySelector('#app-user-name');
+    let addUserHeight = document.querySelector('#app-user-height');
+    let addUserWeight = document.querySelector('#app-user-weight');
     addUserName.innerHTML = "Not Set";
-}
-
-if (myApp.user) {
-    let addUserHeight = document.querySelector('#app-user-height');
-    addUserHeight.innerHTML = `${myApp.user.height}`;
-} else {
-    let addUserHeight = document.querySelector('#app-user-height');
     addUserHeight.innerHTML = "Not Set";
-}
-
-if (myApp.user) {
-    let addUserWeight = document.querySelector('#app-user-weight');
-    addUserWeight.innerHTML = `${myApp.user.weight}`;
-} else {
-    let addUserWeight = document.querySelector('#app-user-weight');
     addUserWeight.innerHTML = "Not Set";
 }
 
