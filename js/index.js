@@ -22,17 +22,17 @@ class App {
     }
 
     setUser() {
-        let name = prompt("Enter your name: ", "Tim Tong");
-        let height = prompt("Enter your height(in): ", "70");
-        let weight = prompt("Enter your weight(lbs): ", "180");
+        let name = prompt("Enter your name: ");
+        let height = prompt("Enter your height(in): ");
+        let weight = prompt("Enter your weight(lbs): ");
         this.user = new User(name, height, weight);
         updateRecord(this);
     }
 
     addRecord() {
-        let date = prompt("Enter Date(MM/DD/YY): ", "03/06/20");
-        let exercise = prompt("Enter Exercise: ", "Deadlift");
-        let liftWeight = prompt("Enter lift weight(lbs): ", "315");
+        let date = prompt("Enter Date(MM/DD/YY): ");
+        let exercise = prompt("Enter Exercise: ");
+        let liftWeight = prompt("Enter lift weight(lbs): ");
         let newRecord = new Record(date, exercise, liftWeight);
         this.records.push(newRecord);
         updateRecord(this);
@@ -114,11 +114,44 @@ function updateRecord(app) {
         let exerciseTD = document.createElement('td');
         exerciseTD.innerHTML = record.exercise;
         newTR.appendChild(exerciseTD);
-        
+
         let liftWeightTD = document.createElement('td');
         liftWeightTD.innerHTML = record.liftWeight;
         newTR.appendChild(liftWeightTD);
-        
+
         personalRecordTbody.appendChild(newTR);
     }
-} 
+}
+
+document.images[i].addEventListener('click',
+    function displayList(target = null) {
+        let lists = document.querySelectorAll(".list");
+          for (let i = 0; i < lists.length; i++) {
+          if (lists[i].getAttribute("#arms-list") == target) {
+            lists[i].classList.add("active");
+          } else {
+            lists[i].classList.remove("active");
+          }
+        }
+})
+
+/*
+// eventHandlers to toggle exercise list
+document.images[3].addEventListener('click', function () {
+    document.getElementById('arms-list').classList.toggle('active');
+    document.getElementById('chest-list').classList.remove('active');
+    document.getElementById('legs-list').classList.remove('active');
+})
+
+document.querySelector('.chest').addEventListener('click', function () {
+    document.querySelector('.chest-list').classList.toggle('active');
+    document.querySelector('.arms-list').classList.remove('active');
+    document.querySelector('.legs-list').classList.remove('active');
+})
+
+document.querySelector('.legs').addEventListener('click', function () {
+    document.querySelector('.legs-list').classList.toggle('active');
+    document.querySelector('.arms-list').classList.remove('active');
+    document.querySelector('.chest-list').classList.remove('active');
+})
+*/

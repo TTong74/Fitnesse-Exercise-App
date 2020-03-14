@@ -46,18 +46,24 @@ table {
 .right {
   right: 0;
   background-color: rgb(206, 85, 4);
+  text-align: center;
 }
 
 .centered {
   position: absolute;
-  top: 225px;
+  top: 275px;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .list {
   position: absolute;
   top: 450px;
-  left: 50px;
+  left: 20%;
+  scroll-margin-bottom: 100px;
+  display: none;
+}
+
+.list.active {
+  display: block;
 }
