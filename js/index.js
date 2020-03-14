@@ -123,35 +123,28 @@ function updateRecord(app) {
     }
 }
 
-document.images[i].addEventListener('click',
-    function displayList(target = null) {
-        let lists = document.querySelectorAll(".list");
-          for (let i = 0; i < lists.length; i++) {
-          if (lists[i].getAttribute("#arms-list") == target) {
-            lists[i].classList.add("active");
-          } else {
-            lists[i].classList.remove("active");
-          }
-        }
-})
-
-/*
 // eventHandlers to toggle exercise list
-document.images[3].addEventListener('click', function () {
-    document.getElementById('arms-list').classList.toggle('active');
-    document.getElementById('chest-list').classList.remove('active');
-    document.getElementById('legs-list').classList.remove('active');
+document.getElementById('right-arm').addEventListener('click', function () {
+    document.querySelector('.arms-list').classList.toggle('active');
+    document.querySelector('.chest-list').classList.remove('active');
+    document.querySelector('.legs-list').classList.remove('active');
 })
 
-document.querySelector('.chest').addEventListener('click', function () {
+document.getElementById('left-arm').addEventListener('click', function () {
+    document.querySelector('.arms-list').classList.toggle('active');
+    document.querySelector('.chest-list').classList.remove('active');
+    document.querySelector('.legs-list').classList.remove('active');
+})
+
+document.getElementById('chest').addEventListener('click', function () {
     document.querySelector('.chest-list').classList.toggle('active');
     document.querySelector('.arms-list').classList.remove('active');
     document.querySelector('.legs-list').classList.remove('active');
 })
 
-document.querySelector('.legs').addEventListener('click', function () {
+document.getElementById('legs').addEventListener('click', function () {
     document.querySelector('.legs-list').classList.toggle('active');
     document.querySelector('.arms-list').classList.remove('active');
     document.querySelector('.chest-list').classList.remove('active');
 })
-*/
+

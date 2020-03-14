@@ -61,9 +61,14 @@ table {
   top: 450px;
   left: 20%;
   scroll-margin-bottom: 100px;
+  text-align: left;
   display: none;
 }
 
-.list.active {
+.active {
+  position: absolute;
+  top: 450px;
+  left: 20%;
+  scroll-margin-bottom: 100px;
   display: block;
 }
